@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Code, Layout, Search, Globe, Settings, Cpu, Zap } from "lucide-react";
+import { Code, Layout, Search, Globe, Settings, Cpu, Zap, Server } from "lucide-react";
 import { useEffect, useState } from "react";
 import { searchPhotos } from "@/lib/pexels";
 
@@ -54,6 +54,14 @@ const services = [
         color: "bg-orange-500",
         href: "/services/seo-marketing",
         query: "seo marketing analytics",
+    },
+    {
+        title: "Domain & Hosting",
+        description: "Reliable domain registration and high-performance managed hosting solutions.",
+        icon: Server,
+        color: "bg-cyan-500",
+        href: "/services/domain-hosting",
+        query: "server room technology",
     },
 ];
 

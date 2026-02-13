@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Rocket } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -42,9 +43,15 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-2 group">
-                        <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white transition-transform group-hover:rotate-12">
-                            <Rocket size={24} />
+                    <Link href="/" className="flex items-center gap-3 group">
+                        <div className="relative w-10 h-10 transition-transform group-hover:rotate-12">
+                            <Image
+                                src="/logo.svg"
+                                alt="DevDesigns Logo"
+                                width={40}
+                                height={40}
+                                className="object-contain"
+                            />
                         </div>
                         <span className="text-xl font-heading font-bold text-primary">
                             Dev<span className="text-accent">Designs</span>

@@ -91,3 +91,7 @@ export async function searchVideos(query: string, perPage = 1): Promise<PexelsVi
         return [];
     }
 }
+export async function fetchPexelsPhoto(query: string): Promise<string | null> {
+    const photos = await searchPhotos(query, 1);
+    return photos.length > 0 ? photos[0].src.large2x : null;
+}

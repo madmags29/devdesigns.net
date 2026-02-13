@@ -10,14 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-poppins);
-  --color-primary: #0F172A;
-  --color-accent: #3B82F6;
-  --color-accent-dark: #2563EB;
+  --color-primary: #0c2340;
+  --color-accent: #008751;
+  --color-accent-dark: #006b41;
   --color-slate-50: #F8FAFC;
   --color-slate-100: #F1F5F9;
   --color-slate-200: #E2E8F0;
   --color-slate-800: #1E293B;
-  --color-slate-900: #0F172A;
+  --color-slate-900: #0c2340;
 }
 
 @media (prefers-color-scheme: dark) {

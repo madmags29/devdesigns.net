@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Rocket, Mail, Phone, MapPin, Instagram, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Twitter, Linkedin, Facebook } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -8,9 +9,15 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-2 group">
-                            <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white">
-                                <Rocket size={24} />
+                        <Link href="/" className="flex items-center gap-3 group">
+                            <div className="relative w-10 h-10">
+                                <Image
+                                    src="/logo.svg"
+                                    alt="DevDesigns Logo"
+                                    width={40}
+                                    height={40}
+                                    className="object-contain brightness-0 invert"
+                                />
                             </div>
                             <span className="text-xl font-heading font-bold text-white">
                                 Dev<span className="text-accent">Designs</span>
@@ -36,11 +43,11 @@ export default function Footer() {
                     <div>
                         <h3 className="text-white font-heading font-semibold text-lg mb-6">Services</h3>
                         <ul className="space-y-4">
-                            <li><Link href="#services" className="hover:text-accent transition-colors">Web Development</Link></li>
-                            <li><Link href="#services" className="hover:text-accent transition-colors">UI/UX Design</Link></li>
-                            <li><Link href="#services" className="hover:text-accent transition-colors">E-commerce Solutions</Link></li>
-                            <li><Link href="#services" className="hover:text-accent transition-colors">SEO Optimization</Link></li>
-                            <li><Link href="#services" className="hover:text-accent transition-colors">API Integration</Link></li>
+                            <li><Link href="/services/web-development" className="hover:text-accent transition-colors">Web Development</Link></li>
+                            <li><Link href="/services/ui-ux-design" className="hover:text-accent transition-colors">UI/UX Design</Link></li>
+                            <li><Link href="/services/ecommerce" className="hover:text-accent transition-colors">E-commerce Solutions</Link></li>
+                            <li><Link href="/services/seo-marketing" className="hover:text-accent transition-colors">SEO Optimization</Link></li>
+                            <li><Link href="/services/domain-hosting" className="hover:text-accent transition-colors">Domain & Hosting</Link></li>
                         </ul>
                     </div>
 
@@ -48,11 +55,11 @@ export default function Footer() {
                     <div>
                         <h3 className="text-white font-heading font-semibold text-lg mb-6">Quick Links</h3>
                         <ul className="space-y-4">
-                            <li><Link href="#about" className="hover:text-accent transition-colors">About Us</Link></li>
-                            <li><Link href="#portfolio" className="hover:text-accent transition-colors">Our Portfolio</Link></li>
-                            <li><Link href="#contact" className="hover:text-accent transition-colors">Contact Us</Link></li>
-                            <li><Link href="#" className="hover:text-accent transition-colors">Terms of Service</Link></li>
-                            <li><Link href="#" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
+                            <li><Link href="/portfolio" className="hover:text-accent transition-colors">Our Portfolio</Link></li>
+                            <li><Link href="/contact" className="hover:text-accent transition-colors">Contact Us</Link></li>
+                            <li><Link href="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
                         </ul>
                     </div>
 
@@ -79,8 +86,8 @@ export default function Footer() {
                 <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-sm">© {new Date().getFullYear()} DevDesigns. All rights reserved.</p>
                     <div className="flex gap-6 text-sm">
-                        <Link href="#" className="hover:text-white">Privacy</Link>
-                        <Link href="#" className="hover:text-white">Terms</Link>
+                        <Link href="/privacy" className="hover:text-white">Privacy</Link>
+                        <Link href="/terms" className="hover:text-white">Terms</Link>
                         <Link href="#" className="hover:text-white">Cookies</Link>
                     </div>
                 </div>
