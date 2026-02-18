@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://www.devdesigns.net/sitemap.xml',
+        sitemap: 'https://devdesigns-f93mytdl8-majid-khans-projects-678992a4.vercel.app/sitemap.xml',
     };
 }

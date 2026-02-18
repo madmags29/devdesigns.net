@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   authors: [{ name: "DevDesigns Team" }],
   creator: "DevDesigns",
   publisher: "DevDesigns",
-  metadataBase: new URL("https://www.devdesigns.net"),
+  metadataBase: new URL("https://devdesigns-f93mytdl8-majid-khans-projects-678992a4.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "DevDesigns | Premium Web Design & Digital Solutions",
     description: "DevDesigns provides high-quality web design, development, UI/UX, and digital marketing services.",
-    url: "https://www.devdesigns.net",
+    url: "https://devdesigns-f93mytdl8-majid-khans-projects-678992a4.vercel.app",
     siteName: "DevDesigns",
     images: [
       {
