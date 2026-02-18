@@ -36,8 +36,8 @@ export default function Navbar() {
         <nav
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                scrolled
-                    ? "bg-white/80 backdrop-blur-md shadow-sm py-3"
+                scrolled || isOpen
+                    ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
                     : "bg-transparent py-5"
             )}
         >
@@ -101,7 +101,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-lg font-medium text-slate-700 hover:text-accent"
+                                    className="text-xl font-semibold text-slate-800 hover:text-accent py-2 transition-colors border-b border-slate-50 last:border-0"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}

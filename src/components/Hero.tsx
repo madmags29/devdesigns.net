@@ -127,18 +127,18 @@ export default function Hero() {
                                 </Link>
                             </div>
 
-                            <div className="mt-12 flex items-center justify-center lg:justify-start gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div className="mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-6 md:gap-8 opacity-80 md:opacity-60 grayscale-0 md:grayscale hover:grayscale-0 transition-all duration-500">
                                 <div className="flex items-center gap-2">
-                                    <Layout size={20} />
-                                    <span className="text-sm font-medium">UI/UX</span>
+                                    <Layout size={20} className="text-accent md:text-inherit" />
+                                    <span className="text-sm font-bold md:font-medium">UI/UX</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <Laptop size={20} />
-                                    <span className="text-sm font-medium">Web Apps</span>
+                                    <Laptop size={20} className="text-accent md:text-inherit" />
+                                    <span className="text-sm font-bold md:font-medium">Web Apps</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <Smartphone size={20} />
-                                    <span className="text-sm font-medium">Mobile</span>
+                                    <Smartphone size={20} className="text-accent md:text-inherit" />
+                                    <span className="text-sm font-bold md:font-medium">Mobile</span>
                                 </div>
                             </div>
                         </motion.div>
@@ -171,16 +171,16 @@ export default function Hero() {
                                             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
 
                                             {/* Slide Navigation Overlay */}
-                                            <div className="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div className="absolute inset-0 flex items-center justify-between px-4 md:opacity-0 group-hover:opacity-100 transition-opacity">
                                                 <button
                                                     onClick={(e) => { e.preventDefault(); prevSlide(); }}
-                                                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all"
+                                                    className="w-10 h-10 rounded-full bg-white/40 md:bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all shadow-lg"
                                                 >
                                                     <ChevronLeft size={24} />
                                                 </button>
                                                 <button
                                                     onClick={(e) => { e.preventDefault(); nextSlide(); }}
-                                                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all"
+                                                    className="w-10 h-10 rounded-full bg-white/40 md:bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all shadow-lg"
                                                 >
                                                     <ChevronRight size={24} />
                                                 </button>

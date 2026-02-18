@@ -120,7 +120,7 @@ export default function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-accent/5 transition-all hover:translate-y-[-5px] overflow-hidden relative"
+                            className="group p-6 md:p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-accent/5 transition-all hover:translate-y-[-5px] overflow-hidden relative"
                         >
                             <Link href={service.href} className="block relative z-10">
                                 <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform relative overflow-hidden shadow-lg`}>
