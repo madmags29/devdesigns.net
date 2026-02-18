@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -82,6 +83,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
+        <JsonLd />
         {children}
       </body>
     </html>

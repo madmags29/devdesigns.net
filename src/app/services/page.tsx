@@ -1,8 +1,14 @@
+import type { Metadata } from 'next';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Services from "@/components/Services";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Our Services | DevDesigns",
+    description: "Explore the wide range of digital services offered by DevDesigns, from premium web design and development to SEO and marketing.",
+};
 
 export default function ServicesPage() {
     return (

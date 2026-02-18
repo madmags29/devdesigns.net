@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Portfolio from "@/components/Portfolio";
+
+export const metadata: Metadata = {
+    title: "Our Portfolio | DevDesigns",
+    description: "Explore the work we have done at DevDesigns. From web design to SaaS development, see how we help our clients succeed.",
+};
 
 export default function PortfolioPage() {
     return (

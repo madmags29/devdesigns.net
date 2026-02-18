@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+
+export const metadata: Metadata = {
+    title: "Contact Us | DevDesigns",
+    description: "Get in touch with DevDesigns for your next project. We are ready to help you with web design, development, and digital marketing.",
+};
 
 export default function ContactPage() {
     return (
